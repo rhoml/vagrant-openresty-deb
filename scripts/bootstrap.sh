@@ -114,7 +114,7 @@ do_push_package_cloud() {
   local package_name=$1
 
   echo "{\"https://packagecloud.io\":\"https://packagecloud.io\",\"token\":\"${pc_token}\"}" >> /root/.packagecloud
-  package_cloud push rhoml/openresty/Ubuntu/precise /tmp/openresty/${package_name}
+  package_cloud push rhoml/openresty/ubuntu/precise /tmp/openresty/${package_name}
 }
 
 main() {
