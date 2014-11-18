@@ -35,8 +35,8 @@ do_download_openresty_scripts() {
   local scriptspath=/usr/src/scripts
   mkdir -p $scriptspath
   cd $scriptspath
-  curl -O -s https://github.com/rhoml/vagrant-openresty-deb/blob/master/scripts/openresty.init
-  curl -O -s https://github.com/rhoml/vagrant-openresty-deb/blob/master/scripts/openresty.logrotate
+  curl -O -s https://raw.githubusercontent.com/rhoml/vagrant-openresty-deb/master/scripts/openresty.init
+  curl -O -s https://raw.githubusercontent.com/rhoml/vagrant-openresty-deb/master/scripts/openresty.logrotate
 }
 
 do_retrieve_openresty_code() {
